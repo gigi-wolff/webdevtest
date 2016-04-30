@@ -1,0 +1,18 @@
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Created</th>
+      <th>Card Number</th>
+      <th>Expiration Date</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><%= session[:first_name] + " " + session[:last_name] %></td>
+      <td><%= Time.now.strftime("%d/%m/%Y %H:%M")%></td>
+      <td><%= show_card_number(session[:card_number]) %></td>
+      <td><%= show_date(session[:exp_date]) %></td>
+    </tr>
+  </tbody>
+</table>

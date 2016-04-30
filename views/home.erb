@@ -1,0 +1,28 @@
+<form action="/payments/create" method="post">
+  <p>
+    <label for="first_name">First name:
+      <input name="first_name" value="<%= params[:first_name] %>"/>
+    </label>
+  </p>
+  <p>
+    <label for="last_name">Last name:
+      <input name="last_name" value="<%= params[:last_name] %>"/>
+    </label>
+  </p>
+  <p>
+    <label for="card_number">Card number:
+      <input name="card_number" value="<%= params[:card_number] %>"/>
+    </label>
+  </p>
+  <p>
+    <label for="exp_date">Expiration Date:
+      <input name="exp_date" value="<%= params[:exp_date] %>"/>
+    </label>
+  </p>
+  <p>
+    <label for="cvv">CVV:
+      <input name="cvv" value="<%= params[:cvv] %>"/>
+    </label>
+  </p>
+    <button type="submit">Submit</button>
+</form>
